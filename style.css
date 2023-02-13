@@ -1,0 +1,28 @@
+.bg-light-black {
+
+    background-color: #111111;
+}
+
+
+.bg-black {
+
+    background-color: #000000;
+}
+
+.btn-blue-dark {
+    background-color: #426CEB;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+
+
+}
+
+.btn-blue-dark:hover {
+    background-color: rgb(37, 37, 75);
+
+}
+
+.text-orange {
+    color: rgba(255, 94, 25, 1);
+}
