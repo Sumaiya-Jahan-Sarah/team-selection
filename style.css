@@ -26,3 +26,19 @@
 .text-orange {
     color: rgba(255, 94, 25, 1);
 }
+
+
+.selection {
+
+    background-image: url(images/logo.webp);
+    height: 350px;
+    width: 300px;
+
+}
+
+.budget {
+
+    height: 350px;
+    width: 300px;
+
+}

@@ -1,4 +1,4 @@
-function inputvalue(elementId) {
+function findInputvalue(elementId) {
     const input = document.getElementById(elementId)
     const valueString = input.value
     const value = parseFloat(valueString)

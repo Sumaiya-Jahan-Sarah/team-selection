@@ -13,15 +13,18 @@
 <body class="bg-black">
     <header>
         <section class="  row align-items-center bg-black mx-auto py-4">
-            <div class="col-4 container"><img class="img-fluid" src="images/header-removebg-preview.png" alt=""></div>
-            <div class="col-8 container text-center">
+            <div class="col-3 container" style="background-image: url(images/logo.webp);"><img class="img-fluid"
+                    src="images/header-removebg-preview.png" alt=""></div>
+            <div class="col-6 container text-center">
                 <h1 class="text-orange fs-1 fw-bold">Team Selection</h1>
                 <p class="text-white fs-5">Simply drag and drop players to create formations(drag and drop feature is
                     not
                     available on mobile). Or choose a football formation template from the configuration area?</p>
 
             </div>
+            <div class="col-3"><img class="img-fluid" src="images/soccer-football-goal.jpg" alt=""></div>
         </section>
+
     </header>
     <main class="bg-light-black">
         <section class="row container mx-auto g-4 mt-4 py-4">
@@ -45,8 +48,9 @@
                                 </p>
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid gap-2">
-                                        <button onclick=" addPlayerName('eden-hazrad')" id="select-btn"
-                                            class="btn btn-blue-dark mt-4 fw-semibold" type="button">Select</button>
+                                        <button id="eden-btn" onclick=" addPlayerName('eden-hazrad','eden-btn')"
+                                            id="select-btn" class="btn btn-blue-dark mt-4 fw-semibold"
+                                            type="button">Select</button>
 
                                     </div>
                                 </div>
@@ -69,7 +73,7 @@
                                 </p>
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid gap-2">
-                                        <button onclick=" addPlayerName('messi')"
+                                        <button id="messi-btn" onclick=" addPlayerName('messi','messi-btn')"
                                             class="btn btn-blue-dark mt-4 fw-semibold" type="button">Select</button>
 
                                     </div>
@@ -94,7 +98,7 @@
                                 </p>
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid gap-2">
-                                        <button onclick=" addPlayerName('riyad')"
+                                        <button id="riyad-btn" onclick=" addPlayerName('riyad','riyad-btn')"
                                             class="btn btn-blue-dark mt-4 fw-semibold" type="button">Select</button>
 
                                     </div>
@@ -118,7 +122,7 @@
                                 </p>
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid gap-2">
-                                        <button onclick=" addPlayerName('neymar')"
+                                        <button id="neymar-btn" onclick=" addPlayerName('neymar', 'neymar-btn')"
                                             class="btn btn-blue-dark mt-4 fw-semibold" type="button">Select</button>
 
                                     </div>
@@ -143,7 +147,7 @@
                                 </p>
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid gap-2">
-                                        <button onclick=" addPlayerName('mendy')"
+                                        <button id="mendy-btn" onclick=" addPlayerName('mendy', 'mendy-btn')"
                                             class="btn btn-blue-dark mt-4 fw-semibold" type="button">Select</button>
 
                                     </div>
@@ -168,7 +172,7 @@
                                 </p>
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid gap-2">
-                                        <button onclick=" addPlayerName('ozil')"
+                                        <button id="ozil-btn" onclick=" addPlayerName('ozil','ozil-btn')"
                                             class="btn btn-blue-dark mt-4 fw-semibold" type="button">Select</button>
 
                                     </div>
@@ -194,7 +198,7 @@
                                 </p>
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid gap-2">
-                                        <button onclick=" addPlayerName('sead')"
+                                        <button id="sead-btn" onclick=" addPlayerName('sead','sead-btn')"
                                             class="btn btn-blue-dark mt-4 fw-semibold" type="button">Select</button>
 
                                     </div>
@@ -220,7 +224,7 @@
                                 </p>
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid gap-2">
-                                        <button onclick=" addPlayerName('ronaldo')"
+                                        <button id="ronaldo-btn" onclick=" addPlayerName('ronaldo', 'ronaldo-btn')"
                                             class="btn btn-blue-dark mt-4 fw-semibold" type="button">Select</button>
 
                                     </div>
@@ -246,7 +250,7 @@
                                 </p>
                                 <div class="d-flex justify-content-center">
                                     <div class="d-grid gap-2">
-                                        <button onclick=" addPlayerName('mbaape')"
+                                        <button id="mbaape-btn" onclick=" addPlayerName('mbaape','mbaape-btn')"
                                             class="btn btn-blue-dark mt-4 fw-semibold" type="button">
                                             Select
                                         </button>
@@ -264,21 +268,17 @@
             </div>
             <div class="col-4  my-4 py-4">
                 <!-- Selection  board -->
-                <div class="bg-black text-white py-4 px-4 rounded  my-4 py-4">
+                <div class="bg-black text-white py-4 px-4 rounded  my-4 py-4 selection">
                     <h3 class=" text-center">Selection Board</h3>
                     <ol id="ol-list" class="text-center fw-semibold">
-                        <li>Kylian Mbaape</li>
-                        <li>Mesut ozil</li>
-                        <li>Neymar Jr</li>
-                        <li>Lionel Messi</li>
-                        <li>Eden Hazard</li>
+
 
                     </ol>
                 </div>
 
 
                 <!-- budget -->
-                <div class="bg-black text-white py-4 px-4 rounded  my-4 py-4">
+                <div class="bg-black text-white py-4 px-4 rounded  my-4 py-4 budget">
                     <h2 class=" text-center">Budget</h2>
 
                     <div class="input-group input-group-lg  ">
@@ -295,7 +295,7 @@
                     </div>
 
                     <div class="mt-4 ">
-                        <h5>Player Expenses: $<span id="player-expenses">5000</span></h5>
+                        <h5>Player Expenses: $<span id="player-expenses">00</span></h5>
                     </div>
 
 
@@ -317,7 +317,7 @@
                     </div>
                     <div class="d-flex justify-content-between mt-4">
                         <h5>Total</h5>
-                        <h5 class="text-orange">$<span id="sum-total">11000</span></h5>
+                        <h5 class="text-orange">$<span id="sum-total">00</span></h5>
                     </div>
 
 
